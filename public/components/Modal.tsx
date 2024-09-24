@@ -31,7 +31,6 @@ const Modal = () => {
         );
         imgElement.addEventListener("click", () => {
           setShowModal(true);
-          console.log("image is clicked");
         });
         container.appendChild(imgElement);
         textBox?.appendChild(container);

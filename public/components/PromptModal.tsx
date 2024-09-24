@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import InsertIcon from "../../assets/insert-icon.svg";
-import RegenerateIcon from "../../assets/regenerate-icon.svg";
-import GenerateIcon from "../../assets/generate-icon.svg";
+import InsertIcon from "@/assets/insert-icon.svg";
+import RegenerateIcon from "@/assets/regenerate-icon.svg";
+import GenerateIcon from "@/assets/generate-icon.svg";
 
 interface ModalProps {
   isOpen: boolean;
@@ -9,9 +9,9 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, setIsOpen }) => {
-  const [isGenerated, setIsGenerated] = useState(false);
-  const [userInput, setUserInput] = useState("");
-  const [regenerateInput, setRegenerateInput] = useState("");
+  const [isGenerated, setIsGenerated] = useState<boolean>(false);
+  const [userInput, setUserInput] = useState<string>("");
+  const [regenerateInput, setRegenerateInput] = useState<string>("");
 
   const DUMMY_RESPONSE = `Thank you for the opportunity! If you have any more questions or if there's anything else I can help you with, feel free to ask.`;
 

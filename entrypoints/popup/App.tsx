@@ -1,15 +1,18 @@
-import { useState } from 'react';
-import reactLogo from '@/assets/react.svg';
-import wxtLogo from '/wxt.svg';
-import './App.css';
+import { useState } from "react";
+import reactLogo from "@/assets/react.svg";
+import wxtLogo from "/wxt.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <input type="text" />
-      <button>Generate</button>
+      <div>
+        <img src={wxtLogo} alt="wxt-logo" height="60px" width="60px" />{" "}
+        <img src={reactLogo} alt="react-logo" height="60px" width="60px" />
+        <h4>
+          Extension made using React + Typescript + WXT Framework + Tailwind
+        </h4>
+      </div>
     </>
   );
 }
